@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quem é Jeferson?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="top">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-dark" href="#quem" id="buttonGrande">Quem é Jeferson?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-dark" href="#formacao">Formação</a>
+                    </li>
+                    <li>
+                        <a type="button" class="btn btn-dark" href="#experiencias">Experiências</a>
+                    </li>
+                    <li>
+                        <a type="button" class="btn btn-dark" href="#contatos">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container text-center">
+        <h1 id="quem">Quem é Jeferson?</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="form-row">
+            <div class="form-group text-center col-md-6">
+                <img class="img-thumbnail" src="/static/img/jefe.jpg" id="fotoJefe">
+            </div>
+            <div class="form-group col-md-6">
+                <br>
+                <br>
+                <p>Olá, me chamo Jeferson Roberto Menegatt Thibes :)</p>
+                <p>
+                    Tenho {{ idade[0] }} anos e moro em Florianópolis - SC com meus filhos <a href="#" data-toggle="popover" onmouseover="alteraFoto()" onmouseout="alteraFoto()" class="antonio">Antônio</a> de {{ idade[1] }} anos, <a href="#" data-toggle="popover" onmouseover="alteraFoto()" onmouseout="alteraFoto()" class="valentina">Valentina</a> de {{ idade[2] }} anos e minha Super esposa <a href="#" data-toggle="popover" onmouseover="alteraFoto()" onmouseout="alteraFoto()" class="patricia">Patricia</a> de {{ idade[3] }} anos.
+                </p>
+                <p>
+                    Sou formado em Análise e Desenvolvimento de Sistemas e gosto de programação WEB, principalmente utilizando a linguagem <a href="https://www.python.org/" target="_blank" id="links">Python</a> com os frameworks <a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank" id="links">Flask</a> e <a href="https://www.djangoproject.com/" target="_blank" id="links">Django</a>.
+                </p>
+                <p>
+                    Meu passatempo preferido é jogar Nintendo Switch com meus filhos e assitir filme, também gosto de estudar sobre mercado financeiro(<a href="http://www.b3.com.br/pt_br/" target="_blank" id="links">B3</a>).
+                </p>
+            </div>
+        </div>
+        <a href="#top"><i class="bi bi-arrow-up-square" id="returnTop"></i></a>
+    </div>
+    <br>
+    <br>
+    <div class="container text-center">
+        <h1 id="formacao">Formação:</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <br>
+                <p>
+                    Sou formado em Análise e Desenvolvimento de Sistemas pela <a href="https://www.cesusc.edu.br/" target="_blank" id="links">Faculdade CESUSC</a> localizada no trevo de Santo Antônio de lisboa em Florianópolis - SC.
+                </p>
+                <p>
+                    Durante o curso estudamos tecnologias como: <a href="https://nodejs.org/en/" target="_blank" id="links">NodeJS</a>, <a href="https://docs.microsoft.com/pt-br/cpp/?view=msvc-160" target="_blank" id="links">C</a>, <a href="https://docs.microsoft.com/pt-br/cpp/?view=msvc-160" target="_blank" id="links">C++</a>, <a href="https://www.java.com/pt-BR/" target="_blank" id="links">Java</a>, <a href="https://www.python.org/" target="_blank" id="links">Python</a>, e o trio WEB <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" id="links">JS</a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" id="links">HTML</a> e <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" id="links">CSS</a>.
+                </p>
+                <p>
+                    Com banco de dados relacionais como <a href="" target="_blank" id="links">MySQL</a>, <a href="" target="_blank" id="links">SQLServer</a> e <a href="" target="_blank" id="links">PostGres</a>, e não relacionais como o <a href="" target="_blank" id="links">MongoDB</a>.
+                </p>
+                <p>
+                    Além das linguagens estudamos sobre Arquitetura de Software, Sistemas de informação e Infraestruturas de TI.
+                </p>
+                <p>
+                    Para o trabalho de conclusão de curso, eu e meu colega <a href="https://www.linkedin.com/in/andr%C3%A9-boa-sorte-jord%C3%A3o-costa-90348b160/" target="_blank">André Jordão Boa Sorte</a> desenvolvemos um sistema de abertura e gerenciamento de chamados que pode ser visualizado no video ao lado.
+                </p>
+            </div>
+            <div class="form-group text-center col-md-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TGhqdECcH-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <a href="#top"><i class="bi bi-arrow-up-square" id="returnTop"></i></a>
+    </div>
+    <br>
+    <br>
+    <div class="container text-center">
+        <h1 id="experiencias">Experiências:</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <br>
+                <img class="img-thumbnail" src="/static/img/cesusc.jpg" id="logosMaiores">
+                <img class="img-thumbnail" src="/static/img/cruzesousa.png" id="logosMaiores">
+                <img class="img-thumbnail" src="/static/img/lucila.jpg" id="logosMaiores">
+                <img class="img-thumbnail" src="/static/img/donna.png" id="logosMenores">
+                <img class="img-thumbnail" src="/static/img/seguridade.jpg" id="logosMenores">
+            </div>
+            <div class="form-group col-md-6">
+                <h5>Experiências em TI:</h5>
+                <br>
+                <p>
+                    Trabalho atualmente como Assistente de Sistemas na <a href="https://www.cesusc.edu.br/" target="_blank" id="links">Faculdade CESUSC</a> e <a href="http://www.colegiocruzesousa.com.br/" target="_blank" id="links">Colégio Cruz e Sousa</a>, configurando e prestando suporte aos colaboradores, professores, pais e alunos que utilizam o ERP de gestão educacional <a href="https://www.unimestre.com/" target="_blank" id="links">Unimestre</a>, gestão de biblioteca <a href="https://www.sophia.com.br/" target="_blank" id="links">Sophia</a> e <a href="https://www.office.com/" target="_blank" id="links">Pacote Office</a>.
+                    Além dessas funções, no passado exerci o cargo de Auxiliar de Suporte que era responsável pela manutenção dos computadores e cabeamentos de internet das instituições mencionadas.
+                    <dl>
+                        Ordem de promoções:
+                        <dd>Auxiliar de Suporte - 2014 / 2019</dd>
+                        <dd>Assistente de Sistemas - 2020 / Até o presente momento :)</dd>
+                    </dl>
+                </p>
+                <h5>Outras experiências:</h5>
+                <p>
+                    Também já trabalhei como Bartender(3 anos) no restaurante e balada <a href="http://donnajurere.com.br/" target="_blank" id="links">Donna Jurerê</a>, Vigilante(1 ano) na empresa de serviços terceirizados <a href="https://www.seguridade.com.br/seguranca-limpeza-e-terceirizacao-de-servicos" target="_blank" id="links">Seguridade</a> e Garçon(1 ano) no restaurante <a href="https://www.lucilabistro.com.br/" target="_blank" id="links">Lucila Bistrô</a>.
+                </p>
+            </div>
+        </div>
+        <a href="#top"><i class="bi bi-arrow-up-square" id="returnTop"></i></a>
+    </div>
+    <br>
+    <br>
+    <div class="container text-center">
+        <h1 id="contatos">Contatos:</h1>
+    </div>
+    <div class="container text-center">
+        <a href="https://www.linkedin.com/in/jeferson-roberto-menegatt-thibes-488238160/" id="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/jefethibes" id="github" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+    <div class="container text-center">
+        <i class="bi bi-google" id="google"></i> jefepatytony@gmail.com
+    </div>
+    <div class="container text-center">
+        <i class="bi bi-phone" id="fone"></i> <i class="bi bi-whatsapp" id="whatsapp"></i> (48) 98817-1870
+    </div>
+    <div class="container">
+        <a href="#top"><i class="bi bi-arrow-up-square" id="returnTop"></i></a>
+    </div>
+    <br>
+</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</html>
